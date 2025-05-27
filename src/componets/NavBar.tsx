@@ -23,7 +23,7 @@ export default function NavBar() {
   };
 
   return (
-    <div className="navbar bg-green-700 dark:bg-base-100 shadow-sm">
+    <div className="navbar  dark:bg-success shadow-sm">
       <div className="navbar-start">
         <div className="dropdown md:hidden bg-base-100">
           <div
@@ -77,8 +77,8 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-        <div className="hidden md:flex bg-base-100 ">
-          <ul className="menu menu-horizontal p-0 w-max">
+        <div className="hidden md:flex bg-base-100 rounded-md ">
+          <ul className="menu menu-horizontal p-0 w-max bg-success/40 ">
             <li>
               <Link to="/" className="btn btn-ghost">
                 Homepage
