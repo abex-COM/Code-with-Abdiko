@@ -15,7 +15,7 @@ export default function App() {
 
           <Route
             path="*"
-            element={<div className="text-center">404 Not Found</div>}
+            element={<div className="text-center ">404 Not Found</div>}
           />
         </Routes>
       </BrowserRouter>

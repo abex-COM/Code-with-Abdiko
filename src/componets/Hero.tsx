@@ -1,49 +1,24 @@
-import React from "react";
-interface SkillCardProps {
-  title: string;
-}
-
-const SkillCard: React.FC<SkillCardProps> = ({ title }) => (
-  <div className="flex items-center space-x-2">
-    <svg
-      className="h-5 w-5 text-black"
-      viewBox="0 0 256 256"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M69.12,94.15,28.5,128l40.62,33.85"
-        stroke="black"
-        strokeWidth="16"
-      />
-    </svg>
-    <span className="text-base text-black">{title}</span>
-  </div>
-);
-
-const HeroSection: React.FC = () => {
+const ProfileCard: React.FC = () => {
   return (
-    <section className="relative w-full h-screen bg-cover bg-center  ">
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/60 to-white/40"></div>
-      <div className="relative z-10 h-full flex flex-col justify-center px-8 md:px-16">
-        <h1 className="text-4xl md:text-6xl font-bold text-black leading-tight mb-4">
-          I'm <span className="text-green-600">Full Stack</span> Developer
-        </h1>
-        <p className="text-lg md:text-xl text-black max-w-2xl mb-8">
-          I build modern and responsive web & mobile applications. My expertise
-          lies in React, Node.js, MongoDB, and Tailwind CSS.
-        </p>
+    <div
+      className="relative h-[20rem] w-full flex items-center justify-center overflow-hidden 
+      bg-gradient-to-br from-indigo-600 to-purple-700 animate-gradient-shift"
+    >
+      {/* Background overlay elements */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_30%,rgba(255,255,255,0.1)_0%,transparent_25%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_70%,rgba(255,255,255,0.1)_0%,transparent_25%)]"></div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <SkillCard title="React & React Native" />
-          <SkillCard title="Tailwind CSS & MUI" />
-          <SkillCard title="Node.js & Express" />
-          <SkillCard title="MongoDB & Firebase" />
-        </div>
+      {/* Content */}
+      <div className="relative z-10 px-8 py-12 text-center max-w-4xl">
+        <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+          Abdulhaki Mustefa
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-light text-white/90 drop-shadow-md">
+          Software Developer
+        </h2>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default HeroSection;
+export default ProfileCard;
