@@ -8,7 +8,10 @@ const ProjectCard: React.FC<{
   link = "#",
 }) => {
   return (
-    <div className="card shadow-xl dark:bg-success/10 p-4 flex flex-col justify-between">
+    <div
+      id="project"
+      className="card shadow-xl dark:bg-base-200 p-4 flex flex-col justify-between"
+    >
       <div>
         <h2 className="text-xl font-bold mb-2">{title}</h2>
         <p className="mb-4">{description}</p>

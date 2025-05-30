@@ -2,7 +2,7 @@ import profileImage from "../assets/images/profile.jpg"; // Import the image
 
 const About: React.FC = () => {
   return (
-    <div className="container mx-auto p-4 flex flex-col items-center">
+    <div id="about" className="container mx-auto p-4 flex flex-col items-center">
       <h1 className="lg:text-3xl text-sm font-bold mb-4">About Me</h1>
 
       <div className=" flex container mx-auto p-4  justify-center flex-col items-center">

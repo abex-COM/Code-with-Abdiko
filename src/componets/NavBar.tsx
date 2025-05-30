@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
-import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [theme, setTheme] = useState<string>(() => {
@@ -51,58 +50,58 @@ export default function NavBar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1  mt-3 w-52 p-2 shadow "
           >
             <li>
-              <Link to="/" className="btn btn-ghost ">
+              <a href="/" className="btn btn-ghost ">
                 Homepage
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/portfolio" className="btn btn-ghost">
+              <a href="#contact " className="btn btn-ghost">
                 Contact
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/about" className="btn btn-ghost">
+              <a href="#about" className="btn btn-ghost">
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/blog" className="btn btn-ghost">
+              <a href="#project" className="btn btn-ghost">
                 Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/blog" className="btn btn-ghost">
+              <a href="#experience" className="btn btn-ghost">
                 Education & Experiences
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
         <div className="hidden md:flex bg-base-100 rounded-md ">
           <ul className="menu menu-horizontal p-0 w-max bg-success/40 ">
             <li>
-              <Link to="/" className="btn btn-ghost">
+              <a href="/" className="btn btn-ghost">
                 Homepage
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/portfolio" className="btn btn-ghost">
+              <a href="#contact" className="btn btn-ghost">
                 Contact
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/about" className="btn btn-ghost">
+              <a href="#about" className="btn btn-ghost">
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/blog" className="btn btn-ghost">
+              <a href="#project" className="btn btn-ghost">
                 Projects
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/blog" className="btn btn-ghost">
+              <a href="#experience" className="btn btn-ghost">
                 Education & Experiences
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
